@@ -36,4 +36,11 @@ let Team = [
 
 console.log(Team);
 
+for (let i = 0; i < Team.length; i++ ){
+
+    console.log(Team[i].nome);
+    console.log(Team[i].ruolo);
+    console.log(Team[i].foto);
+}
+
 // function card (Foto,Nome,Ruolo)
