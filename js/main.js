@@ -41,6 +41,15 @@ for (let i = 0; i < Team.length; i++ ){
     console.log(Team[i].nome);
     console.log(Team[i].ruolo);
     console.log(Team[i].foto);
+
+    let membersWrap = document.getElementById('membersWrap');
+    let card = document.createElement('div');
+    card.classList.add('card');
+    membersWrap.append(card);
+
+    card.innerHTML = `${Team[i].nome} ` + `${Team[i].ruolo} ` + `${Team[i].foto} `;
 }
+
+console.log()
 
 // function card (Foto,Nome,Ruolo)
